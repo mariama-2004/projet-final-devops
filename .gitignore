@@ -4,3 +4,4 @@ crictl-*.tar.gz
 kubectl
 *.tar.gz
 *.tgz
+kubectl
