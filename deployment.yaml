@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mon-app-devops
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mon-app-devops
+  template:
+    metadata:
+      labels:
+        app: mon-app-devops
+    spec:
+      containers:
+      - name: mon-app-devops
+        image: mon-app-devops:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
