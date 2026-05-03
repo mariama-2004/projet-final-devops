@@ -20,7 +20,6 @@ pipeline {
         }
         stage('Deploy Kubernetes') {
             steps {
-                sh 'minikube image load mon-app-devops:latest'
                 sh 'kubectl rollout restart deployment mon-app-devops'
                 sh 'kubectl get pods'
             }
