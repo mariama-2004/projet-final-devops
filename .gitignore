@@ -1,0 +1,6 @@
+cri-dockerd/
+cri-dockerd_*.deb
+crictl-*.tar.gz
+kubectl
+*.tar.gz
+*.tgz
