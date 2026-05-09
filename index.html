@@ -1,1 +1,72 @@
-<h1>Bienvenue sur le Pipeline de mariama-maimouna-modou - L3 ETSE</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipeline DevOps - L3 ETSE</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); min-height: 100vh; color: white; }
+        header { text-align: center; padding: 50px 20px 30px; background: rgba(255,255,255,0.05); border-bottom: 2px solid rgba(255,255,255,0.1); }
+        header h1 { font-size: 2.8em; background: linear-gradient(90deg, #00c6ff, #0072ff, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+        header p { color: #aaa; font-size: 1.1em; }
+        .badge { display: inline-block; background: linear-gradient(90deg, #a855f7, #0072ff); padding: 5px 15px; border-radius: 20px; font-size: 0.85em; margin-top: 10px; }
+        .pipeline { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px; padding: 40px 20px; }
+        .step { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; padding: 25px 20px; text-align: center; width: 150px; transition: transform 0.3s, box-shadow 0.3s; }
+        .step:hover { transform: translateY(-8px); box-shadow: 0 15px 40px rgba(0,114,255,0.3); }
+        .step .icon { font-size: 2.5em; margin-bottom: 10px; }
+        .step .label { font-size: 0.9em; color: #ccc; margin-bottom: 5px; }
+        .step .title { font-weight: bold; font-size: 1em; color: white; }
+        .step.active { border-color: #00c6ff; box-shadow: 0 0 20px rgba(0,198,255,0.3); }
+        .arrow { font-size: 1.5em; color: #0072ff; }
+        .cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px 40px 50px; }
+        .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 25px; width: 280px; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { font-size: 1.1em; margin-bottom: 12px; color: #00c6ff; }
+        .card p { color: #bbb; font-size: 0.9em; line-height: 1.6; }
+        .status { display: inline-block; padding: 3px 10px; border-radius: 10px; font-size: 0.8em; background: #16a34a; color: white; margin-top: 10px; }
+        .team { text-align: center; padding: 30px; background: rgba(255,255,255,0.04); border-top: 1px solid rgba(255,255,255,0.1); }
+        .team h2 { color: #a855f7; margin-bottom: 15px; }
+        .members { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .member { background: rgba(168,85,247,0.15); border: 1px solid rgba(168,85,247,0.3); border-radius: 12px; padding: 12px 20px; }
+        footer { text-align: center; padding: 20px; color: #555; font-size: 0.85em; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>🚀 Pipeline DevOps</h1>
+    <p>Continuous Integration & Continuous Deployment</p>
+    <span class="badge">L3 ETSE — Projet Final</span>
+</header>
+<section class="pipeline">
+    <div class="step active"><div class="icon">💻</div><div class="label">Étape 1</div><div class="title">Code</div></div>
+    <div class="arrow">→</div>
+    <div class="step active"><div class="icon">🐙</div><div class="label">Étape 2</div><div class="title">Commit</div></div>
+    <div class="arrow">→</div>
+    <div class="step active"><div class="icon">⚙️</div><div class="label">Étape 3</div><div class="title">Build CI</div></div>
+    <div class="arrow">→</div>
+    <div class="step active"><div class="icon">🐳</div><div class="label">Étape 4</div><div class="title">Docker</div></div>
+    <div class="arrow">→</div>
+    <div class="step active"><div class="icon">☸️</div><div class="label">Étape 5</div><div class="title">Deploy</div></div>
+    <div class="arrow">→</div>
+    <div class="step active"><div class="icon">📊</div><div class="label">Étape 6</div><div class="title">Monitor</div></div>
+</section>
+<section class="cards">
+    <div class="card"><h3>💻 Code & VS Code</h3><p>Développement du site web avec HTML/CSS dans Visual Studio Code sur Ubuntu 24.04.</p><span class="status">✅ Complété</span></div>
+    <div class="card"><h3>🐙 GitHub</h3><p>Code versionné sur GitHub. Dépôt : mariama-2004/projet-final-devops</p><span class="status">✅ Complété</span></div>
+    <div class="card"><h3>⚙️ Jenkins CI</h3><p>Pipeline automatisé avec Jenkins 2.555. Build déclenché à chaque commit sur main.</p><span class="status">✅ Complété</span></div>
+    <div class="card"><h3>🐳 Docker</h3><p>Image mon-app-devops:latest construite avec Apache HTTPD Alpine. Port 8081.</p><span class="status">✅ Complété</span></div>
+    <div class="card"><h3>☸️ Kubernetes</h3><p>Déploiement sur Minikube avec 2 réplicas en Running. NodePort 30080.</p><span class="status">✅ Complété</span></div>
+    <div class="card"><h3>📊 Monitoring</h3><p>Surveillance avec kubectl top pods. CPU: 1m | RAM: 3Mi par pod.</p><span class="status">✅ Complété</span></div>
+</section>
+<section class="team">
+    <h2>👩‍💻 Équipe Projet</h2>
+    <div class="members">
+        <div class="member">👤 Mariama</div>
+        <div class="member">👤 Maimouna</div>
+        <div class="member">👤 Modou</div>
+    </div>
+</section>
+<footer><p>L3 ETSE — Pipeline DevOps CI/CD © 2026</p></footer>
+</body>
+</html>
